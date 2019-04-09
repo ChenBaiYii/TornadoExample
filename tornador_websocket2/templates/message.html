@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Message</title>
+</head>
+<body>
+    message:
+    <div id="content" style="height: 500px; overflow: auto;">
+    </div>
+    <hr>
+    input:
+    <div>
+        <textarea id="msg" cols="30" rows="10" style="width: 800px;">
+        </textarea>
+        <a href="javascript:;" onclick="send_message()"><button>发送</button></a>
+    </div>
+    <script src={{ static_url('ws.js') }}></script>
+</body>
+</html>
